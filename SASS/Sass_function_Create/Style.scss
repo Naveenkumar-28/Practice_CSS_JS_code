@@ -1,0 +1,72 @@
+@import './Function';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include createbox(100vh, 100vw, rgb(207, 197, 197), 0px);
+    @include Create_flex(flex, center, center);
+}
+
+.container {
+    @include createbox(400px, 500px, rgb(253, 5, 5), 5px);
+    @include Create_Padding_margin(20px, 50px auto);
+    @include Create_flex(flex, center, center);
+}
+
+.box1 {
+    @include createbox(95%, 95%, rgb(226, 94, 189), 5px);
+    @include Create_Padding_margin(20px, 0);
+    @include Create_flex(flex, center, center);
+
+}
+
+.box2 {
+    @include createbox(95%, 95%, rgb(101, 94, 226), 5px);
+    @include Create_Padding_margin(20px, 0);
+    @include Create_flex(flex, center, center);
+
+}
+
+.box3 {
+    @include createbox(95%, 95%, rgb(94, 195, 226), 5px);
+    @include Create_Padding_margin(20px, 0);
+    @include Create_flex(flex, center, center);
+
+}
+
+.box4 {
+    @include createbox(95%, 95%, rgb(94, 226, 186), 5px);
+    @include Create_Padding_margin(20px, 0);
+    @include Create_flex(flex, center, center);
+
+}
+
+.box5 {
+    @include createbox(95%, 95%, rgb(18, 231, 61), 5px);
+    @include Create_Padding_margin(20px, 0);
+    @include Create_flex(flex, center, center);
+
+}
+
+.box6 {
+    @include createbox(95%, 95%, rgb(162, 226, 94), 5px);
+    @include Create_Padding_margin(20px, 0);
+    @include Create_flex(flex, center, center);
+
+}
+
+.box7 {
+    @include createbox(95%, 95%, rgb(217, 226, 94), 5px);
+    @include Create_Padding_margin(20px 20px, 0px);
+    @include Create_flex(flex, center, center);
+}
+
+.box8 {
+    @include createbox(95%, 95%, rgb(238, 235, 230), 5px);
+    @include Create_Padding_margin(20px, 15px);
+
+}

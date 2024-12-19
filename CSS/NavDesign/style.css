@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(135, 202, 222, 0.69);
+   
+}
+.navbar{
+    background: linear-gradient(90deg,rgb(230, 53, 53),rgba(255, 0, 204, 0.888));
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 5px 100px;
+    color: white;
+    height: 80px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.458);
+    .logo{
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .navbar-links{
+        display: flex;
+        gap: 40px;
+        li{
+           font-size: 18px; 
+           list-style: none;
+           letter-spacing: 0.5px;
+           cursor: pointer;
+           padding: 5px 0px;
+           border-bottom: 3px solid transparent;
+           transition: border-bottom 0.5s linear;
+           &:hover{
+            border-bottom: 3px solid yellow;
+            color: rgb(203, 203, 203);
+            transition: border-bottom 0.5s linear;
+           }
+        }
+        
+
+    }
+
+}
+
+.nav_smallDevicebtn{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:5px ;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.359), -2px -2px 5px rgba(255, 255, 255, 0.425);
+    div{
+        height: 12%;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.805);
+        border-radius: 5px;
+
+    }
+}
+@media screen and (max-width:1024px ) {
+    .navbar{
+        padding: 5px 30px;
+    }
+}
+@media screen and (max-width:838px ) {
+    .navbar{
+        .navbar-links{
+            gap: 20px;
+        }
+    }
+}
+@media screen and (max-width:695px ) {
+    .navbar{
+        .navbar-links{
+            display: none;
+        }
+    }
+    .nav_smallDevicebtn{
+        display: flex;
+    }
+}

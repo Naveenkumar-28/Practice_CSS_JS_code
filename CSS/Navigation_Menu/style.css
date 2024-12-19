@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+:root{
+    --bg-color:rgb(9, 9, 9);
+    --icon-color:black;
+}
+body{
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover_div{
+    position: absolute;
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    background-color: rgb(76, 243, 76);
+    bottom: 50%;
+    border: 10px solid var(--bg-color);
+    transition: left 0.5s ;
+    &::after{
+        content: '';
+        position: absolute;
+        /* background-color: pink; */
+        box-shadow: 5px -5px 0 var(--bg-color);
+        height: 20px;
+        width: 20px;
+        border-top-right-radius: 25px;
+        left: -30%;
+        bottom: 14.5%;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: transparent;
+        box-shadow: -5px -5px 0 var(--bg-color);
+        height: 20px;
+        width: 20px;
+        border-top-left-radius: 25px;
+        right: -30%;
+        bottom: 14.5%;
+    }
+}.container{
+    height: 80px;
+   width: 525px;
+   background-color: white;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 10px;
+   position: relative;
+}
+.navigate_box{
+   position: relative;
+   width: 480px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   /* background-color: #de2727; */
+
+
+}
+.navigate_content{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    color: var(--icon-color);
+    text-align: center;
+    .icon{
+        font-size: 35px;
+        transition: transform 1s ;
+        color: black;
+    }
+    .name{
+        position: absolute;
+        text-align: center;
+        font-size: 13px;
+        transform: translateY(25px);
+        transition:all 0.5s;
+        opacity: 0;
+    }
+}
+.navigate_content.active{
+    .icon{
+        transform: translateY(-95%);
+        transition: transform 0.5s ;
+    }
+    .name{
+        transform: translateY(20px);
+        font-size: 16px;
+        transition:all 0.5s;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        opacity: 1;
+    }
+}
+.navigate_content:nth-child(1).active ~ .hover_div{
+
+    transform: translateX(calc(96px * 0));
+    transition: transform 0.5s;
+}
+.navigate_content:nth-child(2).active ~ .hover_div{
+
+    transform: translateX(calc(96px * 1));
+    transition: transform 0.5s;
+}
+.navigate_content:nth-child(3).active ~ .hover_div{
+
+    transform: translateX(calc(96px * 2));
+    transition: transform 0.5s;
+}
+.navigate_content:nth-child(4).active ~ .hover_div{
+
+    transform: translateX(calc(96px * 3));
+    transition: transform 0.5s;
+}
+.navigate_content:nth-child(5).active ~ .hover_div{
+
+    transform: translateX(calc(96px * 4));
+    transition: transform 0.5s;
+}
+

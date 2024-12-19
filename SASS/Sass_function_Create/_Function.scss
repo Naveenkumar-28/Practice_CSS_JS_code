@@ -1,0 +1,15 @@
+@mixin createbox($height,$Width,$bg_color,$border_Radius){
+    height: $height;
+    width: $Width;
+    background-color: $bg_color;
+    border-radius: $border_Radius;
+}
+@mixin Create_Padding_margin($padding,$margin){
+    padding:$padding ;
+    margin: $margin;
+}
+@mixin Create_flex($flex,$justify,$align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: grey;
+           
+        }
+        .container{
+            height: 400px;
+            width: 500px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fff;
+            position: relative;
+            .rocket{
+                width: 80px;
+                height: 80px;
+                background-color: red;
+                rotate: 90deg;
+                clip-path: polygon(50% 0%,100% 100%,50% 60%,0% 100%);
+                animation: rocket 10s ease;
+                animation-delay: 5s;
+                top: -10%;
+                left: -8%;
+                position: absolute;
+            }
+        }
+        @keyframes rocket {
+            0%{
+              top: -10%;
+              bottom: 90%;
+              right: 92%;
+              left: -8%;
+            }
+            25%{
+              top: -10%;
+              right: -8%;
+              left: 92%;
+              bottom: 90%;
+              rotate: 180deg;
+            }
+            50%{
+                top: 90%;
+                left: 92%;
+              right: -8%;
+              bottom: -10%; 
+              rotate: 270deg; 
+            }
+            75%{
+                right: 92%;
+                top: 90%;
+              left: -8%;
+              bottom: -10%; 
+              rotate: 360deg;  
+            }
+            100%{
+                right: 92%;
+                bottom: 90%;
+              left: -8%;
+              top: -10%; 
+              rotate: 450deg;    
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rocket"></div>
+    </div>
+    
+</body>
+</html>

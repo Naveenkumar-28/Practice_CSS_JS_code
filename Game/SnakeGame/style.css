@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 600px;
+    margin: auto;
+    margin-top: 20px;
+    width: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: pink;
+    .canvas{
+        /* height: 500px;
+        width: 500px; */
+        border: 2px solid black;
+        margin-bottom: 20px;
+    }
+    .score_box{
+        padding: 10px 20px;
+        font-size: 25px;
+        color: rgb(185, 11, 254);
+        font-weight: 600;
+    }
+
+}

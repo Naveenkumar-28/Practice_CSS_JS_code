@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(207, 197, 197);
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 400px;
+  width: 500px;
+  background-color: rgb(253, 5, 5);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(226, 94, 189);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(101, 94, 226);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(94, 195, 226);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box4 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(94, 226, 186);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box5 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(18, 231, 61);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box6 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(162, 226, 94);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box7 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(217, 226, 94);
+  border-radius: 5px;
+  padding: 20px 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box8 {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(238, 235, 230);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px;
+}/*# sourceMappingURL=Style.css.map */

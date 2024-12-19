@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: #eff0f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 400px;
+            width: 300px;
+            background-color: #eff0f5;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(47, 46, 46, 0.115),-5px -5px 5px white;
+            position: relative;
+        }
+        .outerCard{
+            height: 120px;
+            position: absolute;
+            width: 120px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px rgba(47, 46, 46, 0.115),-5px -5px 5px white;
+            top: 12%;
+            left: 28%;
+        }
+        .outerCard div{
+            height: 85%;
+            width: 85%;
+            overflow: hidden;
+            border-radius: 50%;
+            position: relative;
+            top: 8px;
+            left: 8px;
+
+        }
+        .outerCard > div > img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .name{
+            position: relative;
+            top: 45%;
+            left: 25%;
+        }
+        .name h1{
+            font-size: 22px;
+            font-weight: 100;
+            letter-spacing: 0.1em;
+            color: rgba(0, 0, 0, 0.818);
+        }
+       .name p{
+            font-weight: 100;
+            font-size: 15px;
+            color: rgb(130, 127, 127);
+            padding-left: 5px;
+            padding-top: 5px;
+            
+           } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outerCard">
+            <div>
+                <img src="./IMG_20240412_002424_326.jpg" alt="ProfilePic">
+            </div>
+        </div>
+        <div class="name">
+            <h1>Naveenkumar</h1>
+            <p>Designer & Developer</p>
+        </div>
+    </div>
+</body>
+</html>
