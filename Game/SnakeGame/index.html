@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <canvas class="canvas" id="canvas" height="500px" width="500px" ></canvas>
+        <div class="canvas_outer">
+            <div class="canvas_inside">
+                <canvas id="canvas" height="400px" width="400px" ></canvas>
+            </div>
+        </div>
         <div class="score_box">
-            Score : <span id="score">0</span>
+            <div >Highest Score :  <span id="highest_score">0</span></div>
+            <div>
+                Current Score : <span id="score">0</span>
+            </div>
+        </div>
+        <div class="btn_box">
+            <button class="btn btn_disable"  id="btn_pause">Pause</button>
+            <button class="btn" id="btn_start">Start</button>
+            <button class="btn btn_disable" id="btn_reset">Reset</button>
         </div>
     </div>
+    <!-- <img src="./snakeHead.png" alt="" id="snake" height="25" width="25" srcset=""> -->
     <script src="./javascript.js"></script>
 </body>
 </html>
